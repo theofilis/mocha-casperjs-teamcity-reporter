@@ -1,0 +1,39 @@
+{
+  "name": "mocha-casperjs-teamcity-reporter",
+  "engines": {
+    "node": ">=4"
+  },
+  "version": "1.0.0",
+  "description": "teamcity reporter for mocha-casperjs",
+  "main": "./lib/teamcity.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "test": "mocha test/functional test/programmatic",
+    "test-teamcity-example": "mocha test/test_data/simple.js --reporter lib/teamcity.js",
+    "lint": "eslint lib/*.js test/**/*.js",
+    "lint-fix": "eslint --fix lib/*.js test/**/*.js"
+  },
+  "keywords": [
+    "mocha",
+    "teamcity",
+    "reporter",
+    "jetbrains"
+  ],
+  "dependencies": {
+    "mocha": ">=3.5.0"
+  },
+  "author": "travis jeffery",
+  "maintainers": [
+    {
+      "name": "Jamie Sherriff",
+      "url": "https://github.com/jamie-sherriff"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.4.1"
+  }
+}
